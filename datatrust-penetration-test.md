@@ -73,8 +73,9 @@ Conduct a full penetration test on DataTrust’s cloned environment, covering re
 ## 3.1 Nikto Scan — Apache Web Server
 
 **Screenshots:**  
-![Nikto Scan 1](screenshots/nikto1.png)  
-![Nikto Scan 2](screenshots/nikto2.png)
+![Nikto Scan 1](screenshots/nikto-scan-1.png)
+![Nikto Scan 2](screenshots/nikto-scan-2.png)
+
 
 **Key Findings:**  
 - Outdated Apache 2.4.7  
@@ -88,7 +89,8 @@ Conduct a full penetration test on DataTrust’s cloned environment, covering re
 ## 3.2 Nmap Service Enumeration
 
 **Screenshot:**  
-![Nmap Services](screenshots/nmap-services.png)
+![Nmap Service Scan](screenshots/nmap-service-scan.png)
+
 
 **Open Ports Identified:**
 
@@ -112,7 +114,8 @@ Conduct a full penetration test on DataTrust’s cloned environment, covering re
 ## 4.1 SSH Brute‑Force (Hydra)
 
 **Screenshot:**  
-![Hydra SSH](screenshots/hydra-ssh.png)
+![Hydra SSH Bruteforce](screenshots/hydra-ssh-bruteforce.png)
+
 
 **Result:**  
 - Successful login  
@@ -125,6 +128,7 @@ Conduct a full penetration test on DataTrust’s cloned environment, covering re
 
 **Screenshot:**  
 ![SSH Access](screenshots/ssh-access.png)
+
 
 **Result:**  
 - Full shell access achieved  
@@ -226,5 +230,6 @@ Conduct a full penetration test on DataTrust’s cloned environment, covering re
 - Enforce strong password policies  
 
 ---
+
 
 # ✔ End of Case Study 1
