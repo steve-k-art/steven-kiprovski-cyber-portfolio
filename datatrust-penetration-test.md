@@ -196,40 +196,65 @@ Conduct a full penetration test on DataTrust’s cloned environment, covering re
 - Broken authentication  
 
 ---
+---
 
-# 🛡️ 7. Summary of Findings
+# 🧾 7. Executive Summary
 
-### **Critical Vulnerabilities**
-- OpenSSH authentication bypass  
-- Apache Slowloris DoS  
-- phpMyAdmin brute‑force  
-- LFI → RFI → reverse shell  
-- SQL injection → admin takeover  
-- Weak password policy  
-- Missing security headers  
-- Directory indexing  
+This penetration test assessed DataTrust’s cloned infrastructure, including internal networks, web applications, authentication services, and honeypot systems. The assessment identified multiple high‑risk vulnerabilities across SSH, Apache, phpMyAdmin, and OWASP Juice Shop, demonstrating weaknesses in authentication, configuration, and access control.
 
-### **Impact:**  
-- Full system compromise  
-- Credential exposure  
-- Remote code execution  
-- Administrative access to web apps  
-- Sensitive data disclosure  
+Successful exploitation confirmed that attackers could gain unauthorized access, escalate privileges, extract sensitive data, and disrupt service availability. These findings highlight the need for improved hardening, monitoring, and security controls across the environment.
 
 ---
 
-# 🔧 8. Recommendations
+# 🛠️ 8. Recommendations
 
-- Enforce MFA on SSH and admin portals  
-- Patch Apache, OpenSSH, ProFTPD  
-- Disable directory indexing  
-- Implement rate‑limiting & CAPTCHA  
-- Restrict phpMyAdmin to internal IPs  
-- Harden firewall rules  
-- Deploy IDS/IPS monitoring  
+## 🔐 8.1 Authentication & Access Control
 - Enforce strong password policies  
+- Implement account lockout and rate‑limiting  
+- Disable default credentials  
+- Enable MFA where possible  
+
+## 🧱 8.2 Server Hardening
+- Update Apache to the latest stable version  
+- Install and configure `mod_reqtimeout` and `mod_evasive`  
+- Disable directory indexing  
+- Restrict access to phpMyAdmin to trusted hosts only  
+
+## 🧪 8.3 Web Application Security
+- Implement input validation and sanitization  
+- Patch vulnerable components (Jetty, PHP, Apache modules)  
+- Add CAPTCHA rate‑limiting and bot‑detection  
+- Secure API endpoints with proper authorization checks  
+
+## 🕵️ 8.4 Monitoring & Logging
+- Enable centralized log collection  
+- Monitor authentication attempts  
+- Deploy IDS/IPS rules for Slowloris, brute‑force, and LFI patterns  
+- Review honeypot logs regularly to detect attacker behaviour  
+
+## 🛡️ 8.5 Network Security
+- Segment critical systems  
+- Restrict unnecessary ports  
+- Apply firewall rules to limit SSH and phpMyAdmin exposure  
+- Conduct regular vulnerability scans  
+
+---
+
+# 🏁 9. Conclusion
+
+The penetration test demonstrated that DataTrust’s environment contains several exploitable vulnerabilities across network services, web applications, and authentication mechanisms. Critical issues such as weak SSH authentication, outdated Apache configurations, exposed phpMyAdmin, and insecure Juice Shop components allowed full system compromise, privilege escalation, and sensitive data exposure.
+
+By implementing the recommended security controls, DataTrust can significantly reduce its attack surface, improve resilience against real‑world threats, and strengthen its overall security posture. This assessment provides a clear roadmap for remediation and future hardening efforts.
+
+---
+
+# 📚 10. Appendix
+
+All screenshots, evidence, and exploitation logs are included in the `/screenshots` and `/screenshots2` directories of this repository.
+
 
 ---
 
 
 # ✔ End of Case Study 1
+
