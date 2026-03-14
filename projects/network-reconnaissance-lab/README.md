@@ -1,7 +1,10 @@
 # 🛰️ Network Reconnaissance Lab  
 *Network discovery, enumeration, and service identification in a controlled lab environment*
+
 ---
+
 ## 📌 1. Project Overview
+
 **Objective:**  
 Perform structured network reconnaissance to identify active hosts, open ports, running services, and potential attack surfaces within a simulated enterprise environment.
 
@@ -21,7 +24,7 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 
 ## 🔍 2.1 Nmap Host Discovery
 
-![Nmap Scan](screenshots/t/nmap-scan.png)
+![Nmap Scan](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots/nmap-scan.png)
 
 **Findings:**  
 - Identified active hosts within the 192.168.x.x range  
@@ -32,7 +35,7 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 
 ## 🔍 2.2 ARP Scan
 
-![ARP Scan](screenshots/t/arp-scan.png)
+![ARP Scan](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots/arp-scan.png)
 
 **Findings:**  
 - Discovered local devices using ARP broadcast  
@@ -43,8 +46,8 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 
 ## 🔍 2.3 DNS Enumeration (nslookup & dig)
 
-![nslookup](screenshots/t/nslookup.png)  
-![dig](screenshots/t/dig.png)
+![nslookup](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots/nslookup.png)  
+![dig](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots/dig.png)
 
 **Findings:**  
 - No internal DNS records configured  
@@ -55,7 +58,7 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 
 ## 🔍 2.4 Traceroute
 
-![Traceroute](screenshots/t/traceroute.png)
+![Traceroute](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots/traceroute.png)
 
 **Findings:**  
 - Single hop to internal host  
@@ -66,7 +69,7 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 
 ## 🔍 2.5 Service Enumeration (Nmap -sV)
 
-![Nmap Service Scan](screenshots/t/nmap-service-scan.png)
+![Nmap Service Scan](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots/nmap-service-scan.png)
 
 **Open Ports Identified:**
 
@@ -126,11 +129,18 @@ This Network Reconnaissance Lab demonstrates foundational security testing skill
 
 # 📚 7. Appendix
 
-![Reverse Shell](screenshots%202/honeypot-reverse-shell.png)  
-![Hydra phpMyAdmin](screenshots%202/hydra-phpmyadmin.png)  
-![CAPTCHA Bypass](screenshots%202/juice-captcha-bypass.png)  
-![DOM XSS](screenshots%202/juice-dom-xss.png)  
-![Sensitive Data](screenshots%202/juice-sensitive-data.png)  
-![SQL Login](screenshots%202/juice-sql-login.png)  
-![LFI passwd](screenshots%202/lfi-passwd.png)  
-![Slowloris DoS](screenshots%202/slowloris-dos.png)
+![Reverse Shell](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/honeypot-reverse-shell.png)
+
+![Hydra phpMyAdmin](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/hydra-phpmyadmin.png)
+
+![CAPTCHA Bypass](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-captcha-bypass.png)
+
+![DOM XSS](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-dom-xss.png)
+
+![Sensitive Data](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-sensitive-data.png)
+
+![SQL Login](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-sql-login.png)
+
+![LFI passwd](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/lfi-passwd.png)
+
+![Slowloris DoS](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/slowloris-dos.png)
