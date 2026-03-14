@@ -18,14 +18,14 @@ Welcome to my cybersecurity portfolio. This repository demonstrates hands-on sec
 ## 📁 Projects
 
 ### 🛡️ [DataTrust Vulnerability Assessment](vulnerability-assessment-datatrust/README.md)
-[DataTrust Vulnerability Assessment](vulnerability-assessment-datatrust/README.md) 
+
 Comprehensive penetration test against a simulated enterprise environment. Identified and exploited three CVEs including OpenSSH brute force (CVE-2016-6515), Apache Slowloris DoS (CVE-2007-6750), and phpMyAdmin credential attack (CVE-2020-17530). Includes full remediation report.
 
 **Tools:** `Nmap` `Nikto` `Hydra` `Metasploit` `ARP` `traceroute`
 
 ---
 
-### 🍊 [Web Application Security Testing – OWASP Juice Shop](projects/web-application-testing-owasp/README.md)
+### 🍊 [OWASP Juice Shop](owasp-juice-shop/README.md)
 End-to-end web application security assessment across three difficulty levels. Demonstrated SQL injection admin bypass, DOM-based XSS, CAPTCHA bypass, database schema extraction via UNION injection, and proxy-based vulnerability assessment.
 
 **Tools:** `Burp Suite` `OWASP ZAP` `Browser DevTools` `dirb`
