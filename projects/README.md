@@ -42,8 +42,7 @@ Structured network reconnaissance to identify active hosts, open ports, running 
 
 ---
 
-### 🍯 [Honeypot Penetration Testing](projects/honeypot-penetration-testing/README.md)
-[Honeypot Penetration Testing](honeypot-penetration-testing/README.md) 
+### 🍯 [Honeypot Penetration Testing](honeypot-penetration-testing/README.md) 
 
 Penetration testing of two honeypot virtual machines. Achieved remote code execution via Local File Inclusion, reverse shell deployment, PHP filter-based credential extraction, and webshell upload across two target VMs.
 
