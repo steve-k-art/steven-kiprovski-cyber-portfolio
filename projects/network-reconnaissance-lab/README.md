@@ -1,14 +1,24 @@
-# 🛰️ Network Reconnaissance Lab  
-*Network discovery, enumeration, and service identification in a controlled lab environment*
+## 🔍 2.1 Nmap Host Discovery
+
+**Screenshot:**  
+![Nmap Scan](../screenshots/nmap-scan.png)
+
+**Findings:**  
+- Identified active hosts within the 192.168.x.x range  
+- Detected ICMP echo responses  
+- Confirmed network accessibility and baseline topology  
 
 ---
 
-## 📌 1. Project Overview
+## 🔍 2.2 ARP Scan
 
-**Objective:**  
-Perform structured network reconnaissance to identify active hosts, open ports, running services, and potential attack surfaces within a simulated enterprise environment.
+**Screenshot:**  
+![ARP Scan](../screenshots/arp-scan.png)
 
-**Focus Areas:**  
+**Findings:**  
+- Discovered local devices using ARP broadcast  
+- Successfully resolved MAC addresses  
+- Identified gateway and internal hosts  
 - Host discovery  
 - Service enumeration  
 - DNS analysis  
