@@ -8,6 +8,8 @@
 - Identified active hosts within the 192.168.x.x range  
 - Detected ICMP echo responses  
 - Confirmed network accessibility and baseline topology  
+![Nmap Scan](../screenshots/nmap.png)
+![ARP Scan](../screenshots/arp.png)
 
 **Screenshot:**  
 ![ARP Scan](../screenshots/arp-scan.png)
