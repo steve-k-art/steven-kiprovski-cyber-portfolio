@@ -1,4 +1,5 @@
 ## 🔍 2.1 Nmap Host Discovery
+![ARP Scan](../screenshots/arp-scan.png)
 
 **Screenshot:**  
 ![Nmap Scan](../screenshots/nmap-scan.png)
