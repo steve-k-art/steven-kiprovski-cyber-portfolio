@@ -25,7 +25,7 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 ## 🔥 2.1 SQL Injection – Admin Login Bypass
 
 **Screenshot:**  
-`/screenshots/sqli-login.png`
+![SQLi Login](../screenshots/sqli-login.png)
 
 **Result:**  
 - Successful authentication bypass  
@@ -36,7 +36,7 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 ## 🧨 2.2 DOM‑Based XSS
 
 **Screenshot:**  
-`/screenshots/dom-xss.png`
+![DOM XSS](../screenshots/dom-xss.png)
 
 **Result:**  
 - JavaScript executed in victim browser  
@@ -47,7 +47,7 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 ## 🔐 2.3 CAPTCHA Bypass
 
 **Screenshot:**  
-`/screenshots/captcha-bypass.png`
+![CAPTCHA Bypass](../screenshots/captcha-bypass.png)
 
 **Result:**  
 - CAPTCHA validation bypassed  
@@ -58,7 +58,7 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 ## 🕵️ 2.4 Sensitive Data Exposure
 
 **Screenshot:**  
-`/screenshots/sensitive-data.png`
+![Sensitive Data](../screenshots/sensitive-data.png)
 
 **Result:**  
 - User data accessible without proper authorization  
