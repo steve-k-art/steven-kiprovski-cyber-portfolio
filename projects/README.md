@@ -17,7 +17,7 @@ Welcome to my cybersecurity portfolio. This repository demonstrates hands-on sec
 
 ## 📁 Projects
 
-### 🛡️ [Vulnerability Assessment – DataTrust](projects/vulnerability-assessment-datatrust/README.md)
+### 🛡️ [[DataTrust Vulnerability Assessment](vulnerability-assessment-datatrust/README.md))
 [DataTrust Vulnerability Assessment](vulnerability-assessment-datatrust/README.md) 
 Comprehensive penetration test against a simulated enterprise environment. Identified and exploited three CVEs including OpenSSH brute force (CVE-2016-6515), Apache Slowloris DoS (CVE-2007-6750), and phpMyAdmin credential attack (CVE-2020-17530). Includes full remediation report.
 
