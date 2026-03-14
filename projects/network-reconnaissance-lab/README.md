@@ -25,7 +25,7 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 ## 🔍 2.1 Nmap Host Discovery
 
 **Screenshot:**  
-`/screenshots/nmap-scan.png`
+![Nmap Scan](../screenshots/nmap-scan.png)
 
 **Findings:**  
 - Identified active hosts within the 192.168.x.x range  
@@ -37,7 +37,7 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 ## 🔍 2.2 ARP Scan
 
 **Screenshot:**  
-`/screenshots/arp-scan.png`
+![ARP Scan](../screenshots/arp-scan.png)
 
 **Findings:**  
 - Discovered local devices using ARP broadcast  
@@ -49,8 +49,8 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 ## 🔍 2.3 DNS Enumeration (nslookup & dig)
 
 **Screenshots:**  
-`/screenshots/nslookup.png`  
-`/screenshots/dig.png`
+![nslookup](../screenshots/nslookup.png)  
+![dig](../screenshots/dig.png)
 
 **Findings:**  
 - No internal DNS records configured  
@@ -62,7 +62,7 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 ## 🔍 2.4 Traceroute
 
 **Screenshot:**  
-`/screenshots/traceroute.png`
+![Traceroute](../screenshots/traceroute.png)
 
 **Findings:**  
 - Single hop to internal host  
@@ -74,7 +74,7 @@ Perform structured network reconnaissance to identify active hosts, open ports, 
 ## 🔍 2.5 Service Enumeration (Nmap -sV)
 
 **Screenshot:**  
-`/screenshots/nmap-service-scan.png`
+![Nmap Service Scan](../screenshots/nmap-service-scan.png)
 
 **Open Ports Identified:**
 
