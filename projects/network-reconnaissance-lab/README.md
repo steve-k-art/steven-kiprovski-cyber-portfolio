@@ -8,10 +8,6 @@
 - Detected ICMP echo responses  
 - Confirmed network accessibility and baseline topology  
 
----
-
-## 🔍 2.2 ARP Scan
-
 **Screenshot:**  
 ![ARP Scan](../screenshots/arp-scan.png)
 
@@ -24,7 +20,15 @@
 - DNS analysis  
 - Network path tracing  
 - Evidence‑based reporting  
+ ## 🔍 2.2 ARP Scan
 
+**Screenshot:**  
+![ARP Scan](../screenshots/arp-scan.png)
+
+**Findings:**  
+- Discovered local devices using ARP broadcast  
+- Successfully resolved MAC addresses  
+- Identified gateway and internal hosts  
 **Tools Used:**  
 `Nmap`, `ARP`, `nslookup`, `dig`, `traceroute`, `Netcat`, `WHOIS`
 
