@@ -33,8 +33,7 @@ End-to-end web application security assessment across three difficulty levels. D
 
 ---
 
-### 🛰️ [Network Reconnaissance Lab](projects/network-reconnaissance-lab/README.md)
-[Network Reconnaissance Lab](network-reconnaissance-lab/README.md)
+### 🛰️ [Network Reconnaissance Lab](network-reconnaissance-lab/README.md)
 
 Structured network reconnaissance to identify active hosts, open ports, running services, and potential attack surfaces across a simulated enterprise network. Includes DNS enumeration, traceroute analysis, and full service version detection.
 
