@@ -24,8 +24,7 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 
 ## 🔥 2.1 SQL Injection – Admin Login Bypass
 
-**Screenshot:**  
-![SQLi Login](../screenshots/sqli-login.png)
+![SQLi Login](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-sql-login.png)
 
 **Result:**  
 - Successful authentication bypass  
@@ -35,8 +34,7 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 
 ## 🧨 2.2 DOM‑Based XSS
 
-**Screenshot:**  
-![DOM XSS](../screenshots/dom-xss.png)
+![DOM XSS](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-dom-xss.png)
 
 **Result:**  
 - JavaScript executed in victim browser  
@@ -46,8 +44,7 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 
 ## 🔐 2.3 CAPTCHA Bypass
 
-**Screenshot:**  
-![CAPTCHA Bypass](../screenshots/captcha-bypass.png)
+![CAPTCHA Bypass](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-captcha-bypass.png)
 
 **Result:**  
 - CAPTCHA validation bypassed  
@@ -57,8 +54,7 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 
 ## 🕵️ 2.4 Sensitive Data Exposure
 
-**Screenshot:**  
-![Sensitive Data](../screenshots/sensitive-data.png)
+![Sensitive Data](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-sensitive-data.png)
 
 **Result:**  
 - User data accessible without proper authorization  
@@ -98,11 +94,16 @@ Identify and exploit common web application vulnerabilities in OWASP Juice Shop 
 ---
 
 # 🏁 5. Conclusion
-
 The OWASP Juice Shop assessment demonstrated multiple high‑risk vulnerabilities including SQL injection, XSS, and authentication bypass. These findings highlight the importance of secure coding practices, proper input validation, and robust access control mechanisms.
 
 ---
 
 # 📚 6. Appendix
 
-All screenshots and evidence are stored in the `/screenshots` and `/screenshots 2` directories.
+![SQLi Login](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-sql-login.png)
+
+![DOM XSS](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-dom-xss.png)
+
+![CAPTCHA Bypass](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-captcha-bypass.png)
+
+![Sensitive Data](https://raw.githubusercontent.com/steve-k-art/steven-kiprovski-cyber-portfolio/main/screenshots%202/juice-sensitive-data.png)
