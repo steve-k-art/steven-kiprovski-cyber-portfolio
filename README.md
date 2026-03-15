@@ -45,14 +45,6 @@ Penetration testing of two honeypot virtual machines. Achieved remote code execu
 
 ---
 
-### 🛡️ [Vulnerability Assessment – DataTrust](projects/vulnerability-assessment-datatrust/README.md)
-Network and web service vulnerability assessment. Identified critical CVEs across 
-ProFTPD, OpenSSH, Apache and phpMyAdmin. Includes full remediation report.
-
-📄 [Full case study](projects/vulnerability-assessment-datatrust/datatrust-case-study.md)
-
----
-
 ### 🏗️ [DataTrust – Cyber Infrastructure & Red/Blue Team Exercise](projects/datatrust-infrastructure-pentest/README.md)
 Designed and attacked a full virtualised enterprise environment across 5 network zones. 
 Red team exploitation of 5+ CVEs, blue team detection via Splunk/Kibana/OSSEC, 
