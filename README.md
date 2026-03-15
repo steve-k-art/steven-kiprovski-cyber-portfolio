@@ -7,7 +7,8 @@
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat&logo=wireshark&logoColor=white)
 ![Nmap](https://img.shields.io/badge/Nmap-004170?style=flat&logoColor=white)
 
-**Junior Penetration Tester · Junior SOC Analyst · Junior GRC Analyst**
+**Penetration Tester · SOC Analyst · Threat Analyst**
+**Security Engineer · GRC Analyst**
 📍 Sydney, Australia
 
 ---
