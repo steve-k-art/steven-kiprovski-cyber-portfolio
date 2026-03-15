@@ -46,12 +46,17 @@ Penetration testing of two honeypot virtual machines. Achieved remote code execu
 ---
 
 ### 🛡️ [Vulnerability Assessment – DataTrust](projects/vulnerability-assessment-datatrust/README.md)
+Network and web service vulnerability assessment. Identified critical CVEs across 
+ProFTPD, OpenSSH, Apache and phpMyAdmin. Includes full remediation report.
 
-Comprehensive penetration test against a simulated enterprise environment. Identified and exploited three CVEs including OpenSSH brute force (CVE-2016-6515), Apache Slowloris DoS (CVE-2007-6750), and phpMyAdmin credential attack (CVE-2020-17530). Includes full remediation report.
+📄 [Full case study](projects/vulnerability-assessment-datatrust/datatrust-case-study.md)
 
-📄 [Full case study — red/blue team findings, exploit walkthroughs & risk assessment](projects/vulnerability-assessment-datatrust/datatrust-case-study.md)
+---
 
-**Tools:** `Nmap` `Nikto` `Hydra` `Metasploit` `ARP` `traceroute`
+### 🏗️ [DataTrust – Cyber Infrastructure & Red/Blue Team Exercise](projects/datatrust-infrastructure-pentest/README.md)
+Designed and attacked a full virtualised enterprise environment across 5 network zones. 
+Red team exploitation of 5+ CVEs, blue team detection via Splunk/Kibana/OSSEC, 
+revised risk assessment and remediation roadmap.
 
 ## 🖥️ Lab Environment
 
