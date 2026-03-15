@@ -1,123 +1,150 @@
-# 🛠️ Cybersecurity Tools Used
+# 🖥️ Cybersecurity Lab Environment
 
-A reference guide to the tools used across all projects in this portfolio, including their purpose and how they were applied.
-
----
-
-## 🖥️ Operating System
-
-### Kali Linux
-Primary operating system used for all penetration testing and vulnerability assessment activities. Provides a purpose-built environment with pre-installed security tools.
+All security testing was conducted in an isolated virtual machine environment simulating a real enterprise network. No testing was performed on live or unauthorised systems.
 
 ---
 
-## 🔍 Reconnaissance & Network Scanning
+## 🏗️ Environment Overview
 
-### Nmap
-Used for network discovery, host identification, port scanning, and service version detection (`-sV`). Applied across all projects to map the target environment and identify open ports and running services. NSE scripts used for banner grabbing, default credential checks, and CVE-based vulnerability scanning.
-
-### ARP
-Used to discover active devices on local networks by resolving IP addresses to MAC addresses. Applied during the Network Reconnaissance Lab to confirm host availability.
-
-### nslookup
-Used to query DNS for domain-to-IP resolution. Applied to confirm DNS configuration and identify the absence of internal name resolution in the DataTrust environment.
-
-### dig
-Versatile DNS querying tool used to interrogate DNS records in detail. Provides deeper insight than nslookup, useful for identifying DNS misconfigurations.
-
-### traceroute
-Used to trace the network path packets take to reach a target. Applied to map network topology and confirm flat network structure in the DataTrust environment.
-
-### Netcat (nc)
-Used to set up listeners for incoming reverse shell connections. Applied in the Honeypot lab to receive a reverse shell from the target machine on port 1234.
-
-### Legion
-Used for automated network scanning and service enumeration combined with credential brute-forcing. Applied during the DataTrust infrastructure red team exercise against SMB (port 445) on the honeypot target to discover and exploit weak credentials.
+| Component | Details |
+|-----------|---------|
+| Virtualisation Platform | VMware Workstation / Oracle VirtualBox |
+| Network Type | Host-only / Internal (isolated) |
+| Attacker Machine | Kali Linux 2024.3 |
+| Target Network Ranges | 10.5.1.x / 10.30.0.x / 192.168.0.x / 192.168.1.x / 192.168.112.x / 192.168.56.x |
 
 ---
 
-## 🌐 Web Application Testing
+## ⚔️ Attacker Machines
 
-### Burp Suite
-Used to intercept, inspect, and manipulate HTTP/HTTPS requests and responses. Applied extensively in OWASP Juice Shop testing for SQL injection, CAPTCHA bypass, password brute force via Intruder, and API endpoint manipulation via Repeater. Also used during the DataTrust infrastructure project for XSS payload delivery.
+### Kali Linux 2024.3
+Purpose-built penetration testing OS used as the primary attack platform across all projects.
 
-### OWASP ZAP
-Used to perform automated spider scans and active/passive vulnerability assessments. Applied against OWASP Juice Shop to discover the admin email address and identify hidden endpoints. Also used during the DataTrust infrastructure project to generate full web application vulnerability reports.
-
-### Browser DevTools
-Used to inspect the DOM structure of web pages during XSS testing. Applied to locate the iframe element that confirmed the DOM-based XSS vulnerability in Juice Shop.
-
-### dirb
-Used to brute-force hidden web directories and files. Applied in the Honeypot lab to discover upload directories used for webshell deployment.
-
-### Wfuzz
-Used to fuzz web application parameters for Local File Inclusion (LFI) vulnerabilities. Applied in the Honeypot lab to discover the vulnerable `search1.php` parameter.
-
-### Gobuster
-Used for fast directory and file enumeration against web servers. Applied in the Honeypot lab to identify sensitive files including `.htaccess`, `.htpasswd`, and `index.php`.
+- IP addresses used: `10.5.1.3`, `192.168.0.100`, `192.168.1.100`, `192.168.112.128`, `192.168.56.107`
+- Pre-installed toolset including Nmap, Hydra, Metasploit, Nikto, Burp Suite, Legion, and more
+- Python HTTP server used to serve payloads to target machines
+- Two instances deployed in the DataTrust infrastructure project — one on the Internal network (defensive monitoring) and one on the External Testing network (offensive operations)
 
 ---
 
-## 💥 Exploitation & Attack Tools
+## 🎯 Target Systems
 
-### Hydra
-Used to perform brute-force credential attacks against multiple services. Applied against SSH (CVE-2016-6515) and phpMyAdmin (CVE-2020-17530) in the DataTrust vulnerability assessment. Also applied against SMB port 445 during the DataTrust infrastructure red team exercise.
+### DataTrust Security Assessment (10.5.1.137)
+Simulated enterprise server running multiple services across a flat network. Used for vulnerability assessment and exploitation.
 
-### Metasploit Framework
-Used to test exploitation of identified vulnerabilities. Applied to execute the Slowloris DoS module (`auxiliary/dos/http/slowloris`) against Apache HTTP Server (CVE-2007-6750). Also used to exploit vsftpd 2.3.4 backdoor (CVE-2011-2523) for root shell access during the infrastructure red team exercise.
-
-### Python HTTP Server
-Used to serve malicious payloads (reverse shell scripts) to target machines during the Honeypot lab. Launched via `python3 -m http.server 80`.
-
----
-
-## 🔎 Vulnerability Scanning
-
-### Nikto
-Used to scan web servers for vulnerabilities, outdated software versions, missing security headers, and exposed configuration files. Applied against the DataTrust Apache server, both honeypot VMs, and the Metasploitable 2 target during the infrastructure project.
-
-### OpenVAS
-Used for comprehensive, authenticated vulnerability scanning across the DataTrust environment. Identified service-level CVEs, misconfigurations, and risk-rated findings across multiple targets.
+| Port | Service | Version |
+|------|---------|---------|
+| 21 | FTP | ProFTPD 1.3.5 |
+| 22 | SSH | OpenSSH 6.6.1p1 |
+| 80 | HTTP | Apache httpd 2.4.7 |
+| 445 | Netbios-SSN | Samba smbd 3.x–4.x |
+| 3306 | MySQL | Unauthorized |
+| 8080 | HTTP | Jetty 8.1.7 |
 
 ---
 
-## 🖧 Network Security & Monitoring
+### DataTrust – Virtualised Infrastructure (10.30.0.0/24)
+Full enterprise environment built across 5 isolated network zones for a red/blue team exercise. Designed, implemented, and attacked as part of the DataTrust infrastructure project.
 
-### Security Onion
-Used as a centralised firewall, router, and network IDS platform during the DataTrust infrastructure project. Configured with four network interfaces to segment the Internal, DMZ, External Testing, and ISP zones. Provided centralised traffic filtering and IDS alerting across all zones.
+| Device | IP Address | Role |
+|--------|-----------|------|
+| Security Onion | 192.168.0.1 / 192.168.1.1 / 10.30.0.1 | Centralised firewall, IDS, traffic filtering across all zones |
+| Kali Linux (Internal) | 192.168.0.100 | Defensive operations, Wireshark monitoring |
+| Kali Linux (External) | 192.168.1.100 | Offensive operations, simulated external attacker |
+| Splunk Server | 192.168.0.10 | Centralised log collection and security event analysis |
+| Metasploitable 2 | 10.30.0.235 | Honeypot / decoy server — primary red team target |
+| Windows Server | 10.30.0.236 | DHCP, DNS, AD Certificate Services, Email |
+| Web Server Farm | 10.30.0.237 | OWASP Juice Shop hosted on port 3000 |
 
-### Splunk
-Used for centralised log collection, indexing, and security event analysis. Configured to ingest logs from across the virtualised enterprise environment. Integrated with Kibana for dashboard visualisation and event timeline analysis.
+**Network Zones:**
 
-### OSSEC (HIDS)
-Host-based intrusion detection system deployed during the DataTrust infrastructure project. Generated real-time alerts for port status changes and zero-packet events during red team testing. Logs reviewed via Kibana dashboard showing 9,115 total events captured.
-
-### Snort
-Network-based IDS configured with custom detection rules during the DataTrust infrastructure project. Rules written to detect ICMP flooding and port scanning activity. Configured to send automated email alerts to the security team upon trigger.
-
-### Wireshark
-Used for packet-level traffic capture and analysis. Applied to monitor live traffic into the honeypot during the infrastructure project, capturing ICMP and TCP packets from the external testing machine. Also useful for identifying unencrypted credentials and protocol-level vulnerabilities.
-
----
-
-## 📊 Log Analysis & Visualisation
-
-### Kibana
-Used to visualise and analyse security event logs via dashboards during the DataTrust infrastructure project. Tracked 9,115 OSSEC and syslog events, 944 NIDS alerts, and 803 classified threat events. Used to identify activity spikes and correlate attack timelines.
-
-### Squert
-Used for IDS event analysis and timeline visualisation during the DataTrust infrastructure blue team exercise. Detected VNC scan attempts (ET SCAN 2002910) and logged 533 listened port status events. Provided priority-based filtering for event triage.
+| Zone | Subnet | Purpose |
+|------|--------|---------|
+| Internal Network | 192.168.0.0/24 | Defensive operations, log collection |
+| External Testing Network | 192.168.1.0/24 | Simulated external attacker |
+| DMZ (Perimeter) | 10.30.0.0/24 | Public-facing services, honeypot |
+| ISP (Internet Simulation) | 10.0.2.x | Untrusted external traffic |
 
 ---
 
-## 📋 Supporting Tools
+### OWASP Juice Shop (127.0.0.1:3000)
+Deliberately insecure Node.js web application used for web application security testing.
 
-| Tool | Purpose |
-|------|---------|
-| `netdiscover` | Active host discovery on local networks |
-| `WHOIS` | Passive information gathering on domain registration |
-| `ssh` | Remote shell access after credential discovery |
-| `ip a` | Network interface enumeration on attacker machine |
-| `uname` | OS identification on compromised machines |
-| `iptables` | Firewall rule configuration on Linux systems — used to block SSH (port 22) and permit HTTP (port 80) during infrastructure hardening |
-| `docker` | Used to deploy OWASP Juice Shop container (`docker run --rm -p 3000:3000 bkimminich/juice-shop`) |
+- Hosted locally on Kali Linux via Docker
+- Tested across three difficulty levels
+- Proxy traffic intercepted via Burp Suite on `localhost:8080`
+- Also deployed on Web Server Farm (10.30.0.237:3000) during the DataTrust infrastructure project
+
+---
+
+### Honeypot VM 1 – HP1VM (192.168.112.130)
+Linux web server running a vulnerable PHP web application.
+
+| Port | Service | Version |
+|------|---------|---------|
+| 22 | SSH | OpenSSH |
+| 80 | HTTP | Apache httpd 2.4.38 (Debian) |
+
+- Vulnerable to Local File Inclusion via `search1.php`
+- Exploited via reverse shell connecting back to Kali on port 1234
+
+---
+
+### Honeypot VM 2 – HP2VM (192.168.56.110)
+PwnLab Intranet Image Hosting server running a vulnerable PHP application.
+
+| Port | Service | Version |
+|------|---------|---------|
+| 80 | HTTP | Apache 2.4.10 (Debian) |
+| 111 | RPCBind | 2–4 |
+| 3306 | MySQL | 5.5.47 |
+
+- Vulnerable to PHP filter exploit revealing database credentials
+- Exploited via webshell upload and reverse shell
+
+---
+
+### Base Network VM (10.5.1.1)
+Internal DNS and network base machine used as part of the DataTrust security infrastructure simulation.
+
+- Running domain service on port 53/tcp
+- Confirmed via Nmap scan and traceroute (single hop)
+
+---
+
+## 🌐 Network Topology
+
+```
+[ Kali Linux - Attacker ]
+        |
+        | Host-only / Internal Network
+        |
+   _____|______________________________________________
+   |              |              |                   |
+[DataTrust]  [Juice Shop]   [HP1VM]              [HP2VM]
+10.5.1.137  localhost:3000  192.168.112.130    192.168.56.110
+
+
+DataTrust Infrastructure Project — 5-Zone Architecture:
+
+[ISP / Internet Simulation - 10.0.2.x]
+              |
+      [Security Onion] ← Centralised firewall, IDS, router
+       /       |        \
+      /        |         \
+[Internal]   [DMZ]   [External Testing]
+192.168.0.x  10.30.0.x  192.168.1.x
+(Splunk,    (Metasploitable2,  (Kali —
+ Kali)       Windows Server,   offensive
+             Juice Shop)       operations)
+```
+
+---
+
+## ✅ Lab Safety & Ethics
+
+- All testing was performed exclusively within the isolated virtual lab environment
+- No external or production systems were targeted at any point
+- All activities were conducted in accordance with DataTrust's simulated WHS policy
+- Tools were used solely for educational and assessment purposes within the Advanced Diploma of Cyber Security program
+- All virtual machines were isolated using host-only or internal network adapters to prevent any unintended external traffic
