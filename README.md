@@ -45,7 +45,7 @@ Penetration testing of two honeypot virtual machines. Achieved remote code execu
 
 ---
 
-### 🏗️ [DataTrust – Cyber Infrastructure & Red/Blue Team Exercise](projects/datatrust-infrastructure-pentest/README.md)
+### 🏗️ [DataTrust – Cyber Infrastructure & Red/Blue Team Exercise](projects/datatrust-case-study/README.md)
 Designed and attacked a full virtualised enterprise environment across 5 network zones. 
 Red team exploitation of 5+ CVEs, blue team detection via Splunk/Kibana/OSSEC, 
 revised risk assessment and remediation roadmap.
