@@ -214,11 +214,7 @@ All activities in this portfolio were conducted:
 
 ---
 
-## About
-
-I build and break things. My work focuses on offensive security — finding what's exploitable before attackers do — and defensive monitoring — understanding what an attack looks like in logs, packets, and alerts. Everything in this portfolio was done hands-on in isolated lab environments.
-
-Currently seeking roles in **penetration testing** and **SOC analysis**.
+Welcome to my cybersecurity portfolio. This repository demonstrates hands-on security testing projects completed during my Advanced Diploma of Cyber Security, conducted entirely within isolated virtual lab environments.
 
 ---
 
@@ -376,11 +372,6 @@ All testing was performed in isolated virtual machine environments — no live o
 
 ---
 
-## Certifications & Education
-
-- 🎓 ICT60220 — Advanced Diploma of Information Technology (Cyber Security)
-
----
 
 ## Ethics & Scope
 
