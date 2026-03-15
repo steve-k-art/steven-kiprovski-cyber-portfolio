@@ -8,7 +8,7 @@ Welcome to my cybersecurity portfolio. This repository demonstrates hands-on sec
 
 **Steven Kiprovski**
 Sydney, Australia
-🔗 [github.com/steve-k-art](https://github.com/steve-k-art)
+🔗 [github.com/steve-k-art](https://github.com/steve-k-art) linkedin.com/in/steven-kiprovski(https://www.linkedin.com/in/steven-kiprovski-b6b488387/)
 
 ---
 
