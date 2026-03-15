@@ -52,7 +52,7 @@ Practical coursework covering penetration testing methodologies, network securit
 
 ### 🛡️ Vulnerability Assessment – DataTrust
 
-**[→ View Project README](projects/vulnerability-assessment-datatrust/README.md)**
+**[→ View Findings](projects/vulnerability-assessment-datatrust/README.md)**
 
 A network and web service vulnerability assessment against a simulated enterprise environment (DataTrust). Performed full-scope scanning, enumeration, and exploitation across multiple services to identify and validate critical security weaknesses.
 
@@ -118,7 +118,7 @@ End-to-end virtualised enterprise security project covering infrastructure desig
 
 ### 🍊 Web Application Security Testing – OWASP Juice Shop
 
-**[→ View Project README](projects/web-application-testing-owasp/README.md)**
+**[→ View Findings](projects/web-application-testing-owasp/README.md)**
 
 End-to-end web application security assessment against the OWASP Juice Shop — a deliberately vulnerable Node.js application. Testing was conducted across three difficulty levels covering the OWASP Top 10.
 
@@ -137,7 +137,7 @@ End-to-end web application security assessment against the OWASP Juice Shop — 
 
 ### 🛰️ Network Reconnaissance Lab
 
-**[→ View Project README](projects/network-reconnaissance-lab/README.md)**
+**[→ View Findings](projects/network-reconnaissance-lab/README.md)**
 
 Structured network reconnaissance engagement to identify active hosts, open ports, running services, and potential attack surfaces across a simulated enterprise network. Focused on passive and active enumeration techniques.
 
@@ -155,7 +155,7 @@ Structured network reconnaissance engagement to identify active hosts, open port
 
 ### 🍯 Honeypot Penetration Testing
 
-**[→ View Project README](projects/honeypot-penetration-testing/README.md)**
+**[→ View Findings](projects/honeypot-penetration-testing/README.md)**
 
 Penetration testing of two honeypot virtual machines (HP1VM and HP2VM). Achieved full remote code execution on both targets through different attack chains, demonstrating a range of web application and post-exploitation techniques.
 
