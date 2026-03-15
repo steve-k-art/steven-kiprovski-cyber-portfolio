@@ -50,6 +50,8 @@ Designed and attacked a full virtualised enterprise environment across 5 network
 Red team exploitation of 5+ CVEs, blue team detection via Splunk/Kibana/OSSEC, 
 revised risk assessment and remediation roadmap.
 
+---
+
 ## 🖥️ Lab Environment
 
 All testing was performed in an isolated virtual machine environment — no live or unauthorised systems were targeted. See [lab-environment.md](lab-environment.md) for full details.
